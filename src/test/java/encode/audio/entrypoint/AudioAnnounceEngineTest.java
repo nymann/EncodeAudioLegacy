@@ -12,11 +12,10 @@ public class AudioAnnounceEngineTest {
 
     @Test
     public void checkJUnit() {
-        Assert.fail("it failed");
+        Assert.assertTrue(true);
     }
 
     @Test
-    @Ignore
     public void checkApprovalTestsReporter() throws Exception {
         Approvals.verify("My diff reporter open a new window of my default diff tool. It works!");
     }

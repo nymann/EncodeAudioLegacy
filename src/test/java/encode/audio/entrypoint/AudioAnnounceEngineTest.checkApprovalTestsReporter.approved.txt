@@ -1,0 +1,1 @@
+My diff reporter open a new window of my default diff tool. It works!
