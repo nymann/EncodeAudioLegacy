@@ -1,6 +1,7 @@
 package encode.audio.entrypoint;
 
 import flux.AudioAnnounceTmlg;
+import org.approvaltests.Approvals;
 import org.approvaltests.reporters.DiffReporter;
 import org.approvaltests.reporters.UseReporter;
 import org.fest.assertions.api.Assertions;
@@ -21,6 +22,6 @@ public class AudioAnnounceEngineTest {
         String targetAudioFileMessage = audioAnnounceEngine.publishAudioFile(mp3, audioConfigTmp, httpConfigTmp);
 
         // Then
-        Assertions.assertThat(targetAudioFileMessage).isNotEmpty();
+        Approvals.verify(targetAudioFileMessage);
     }
 }
